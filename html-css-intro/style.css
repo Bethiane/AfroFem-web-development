@@ -1,13 +1,13 @@
-body{
+body {
     background-color: black;
 }
 
-img{
+img {
     width: 400px;
     height: 400px;
 }
 
-.logo img{
+.logo img {
     position: absolute;
     width: 43px;
     height: 43px;
@@ -15,7 +15,7 @@ img{
     top: 17px;
 }
 
-li{
+li {
     position: absolute;
     font-family: Gilroy;
     font-style: normal;
@@ -23,146 +23,138 @@ li{
     font-size: 13px;
     line-height: 12px;
     /* identical to box height */
-    
+
     text-transform: uppercase;
-  
+
 }
-li a{
+
+li a {
     text-decoration: none;
     color: #D0D0D0;
 }
 
-.home{
-left: 483px;
-top: 26px;
+.home {
+    left: 483px;
+    top: 26px;
 }
 
-.about{
-left: 603px;
-top: 26px;
+.about {
+    left: 603px;
+    top: 26px;
 }
 
 
-.services{
-left: 743px;
-top: 26px;
+.services {
+    left: 743px;
+    top: 26px;
 }
 
-.contact{
-left: 903px;
-top: 26px;
-}
-    
-
-.login button{
-position: absolute;
-width: 132px;
-height: 45px;
-left: 1252px;
-top: 12px;
-background: #D0D0D0;
-border: none;
-border-radius: 5px;
+.contact {
+    left: 903px;
+    top: 26px;
 }
 
-.login button a{
-text-decoration: none;
-color: #000000;
-font-family: Gilroy;
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 14px;
+
+.login button {
+    position: absolute;
+    width: 132px;
+    height: 45px;
+    left: 1252px;
+    top: 12px;
+    background: #D0D0D0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login button a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
 
 }
 
-li{
+li {
     list-style-type: none;
 }
 
 
-.name{
+.name {
     position: absolute;
-width: 328px;
-height: 160px;
-left: 125px;
-top: 180px;
+    width: 328px;
+    height: 160px;
+    left: 125px;
+    top: 180px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 80px;
 
-font-family: Gilroy;
-font-style: normal;
-font-weight: 800;
-font-size: 65px;
-line-height: 80px;
-
-color: #D0D0D0;
+    color: #D0D0D0;
 }
 
-.moto{
+.moto {
     position: absolute;
-width: 375px;
-height: 75px;
-left: 125px;
-top: 380px;
-
-font-family: Roboto;
-font-style: normal;
-font-weight: 200;
-font-size: 15px;
-line-height: 25px;
-/* or 167% */
-
-
-color: #FFFFFF;
+    width: 375px;
+    height: 75px;
+    left: 125px;
+    top: 380px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 
-.apply{
-    
-position: absolute;
-width: 200px;
-height: 50px;
-left: 125px;
-top: 545px;
-border: none;
-border-radius: 5px;
+.apply {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 125px;
+    top: 545px;
+    border: none;
+    border-radius: 5px;
 
 }
 
-.apply a{
+.apply a {
     text-decoration: none;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
 
 
-font-family: Gilroy;
-font-style: normal;
-font-weight: lighter;
-font-size: 14px;
-line-height: 14px;
-/* identical to box height */
-
-
-color: #000000;
+    color: #000000;
 }
 
-.fem-one{
+.fem-one {
     position: absolute;
-width: 420px;
-height: 310px;
-left: 900px;
-top: 360px;
+    width: 420px;
+    height: 310px;
+    left: 900px;
+    top: 360px;
 }
 
-.fem-two{
+.fem-two {
     position: absolute;
-width: 400px;
-height: 320px;
-left: 700px;
-top: 220px;
+    width: 400px;
+    height: 320px;
+    left: 700px;
+    top: 220px;
 }
 
-.fem-three{
+.fem-three {
     position: absolute;
-width:400px;
-height: 310px;
-left: 988px;
-top: 110px;
+    width: 400px;
+    height: 310px;
+    left: 988px;
+    top: 110px;
 }
-
