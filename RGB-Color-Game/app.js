@@ -1,8 +1,6 @@
 const rElement = document.getElementById("r");
-console.log(rElement);
-
 const gElement = document.getElementById("g");
-console.log(gElement);
+
 
 const levels = Array.from(document.getElementsByClassName("mode"));
 
@@ -33,12 +31,31 @@ startButton.addEventListener("click", function () {
         const blue = Math.floor(Math.random() * 256);
 
         const rgbString = "rgb("+ red + "," + green + "," + blue + ")";
-        console.log(rgbString);
+      
 
         const square = squares[i];
+
+        square.dataset.rgb_value= JSON.stringify [red, green, blue]
         square.style.backgroundColor = rgbString;
       
     }
  
 
-})
+    const  randomSquareIndex = Math.floor(Math.random() *6);
+    const headerColorSquare = squares[randomSquareIndex];
+    setHeaderRgbBackgroundColor(headerColorSquare)
+  
+
+});
+
+
+function setHeaderRgbBackgroundColor(squareElement) {
+    const rgbString = squareElement.dataset.rgb_value;
+    const [red, green, blue] = JSON.parse(rgbString);
+    console.table(red, green, blue);
+    
+    // const redBackground = [red, 0, 0];
+    // const greenBackgound = [0, green, 0];
+    // const blueBackground = [0, 0, blue];
+
+}
