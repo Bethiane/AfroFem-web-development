@@ -4,24 +4,51 @@ const bElement = document.getElementById("b");
 const colorDisplayElement = document.getElementById("color-display")
 
 const levels = Array.from(document.getElementsByClassName("mode"));
-const squares =Array.from(document.getElementsByClassName("square"));
 
-let gameLevel = levels.find((level)=>{
+let selectedLevelButton = levels.find((level)=>{
     const classList = Array.from(level.classList);
     return classList.includes("selected");
+});
 
-}).innerHTML;
+let gameLevel = selectedLevelButton.innerHTML;
+
+let squares = getSquares()
 
 levels.forEach((level)=>{
     level.addEventListener("click", function () {
       levels.forEach((mode)=> mode.classList.remove("selected"));
         this.classList.add("selected");
 
-        gameLevel = this.innerHTML;
+        gameLevel = this.innerHTML;        
+        setTitlesAccordingToLevel(gameLevel)
+        squares = getSquares()
     });
 });
 
+function getSquares(){
+    const allSquares = Array.from(document.getElementsByClassName("square"));
 
+    if(gameLevel == "Easy") {
+        return allSquares.slice(0, 3)
+    }else {
+        return allSquares
+    }
+}
+
+function setTitlesAccordingToLevel(currentGameLevel){
+    const allSquares = Array.from(document.getElementsByClassName("square"));
+
+    if(currentGameLevel == "Easy") {
+      const firstThreeSquares = allSquares.slice(0, 3)
+      const lastThreeSquares = allSquares.slice(3, 6)
+
+      lastThreeSquares.forEach(sq => sq.classList.add("hidden"))
+      
+    } else if(currentGameLevel == "Hard") {
+        allSquares.forEach(sq => sq.classList.remove("hidden"))
+    }
+
+}
 
 const startButton = document.getElementById("reset");
 
@@ -42,12 +69,10 @@ startButton.addEventListener("click", function () {
       }
 
 
-    const  randomSquareIndex = Math.floor(Math.random() * 6);
+    const  randomSquareIndex = Math.floor(Math.random() * squares.length);
     const headerColorSquare = squares[randomSquareIndex];
     setHeaderRgbBackgroundColor(headerColorSquare)
-  
-
-});
+  });
 
 
 function setHeaderRgbBackgroundColor(squareElement) {
@@ -59,6 +84,7 @@ function setHeaderRgbBackgroundColor(squareElement) {
             return rgbValue > 0;
         });
     };
+
     const rgbString = squareElement.dataset.rgb_value;
     colorDisplayElement.dataset.rgb_value =  rgbString;
     const [red, green, blue] = JSON.parse(rgbString);
@@ -78,9 +104,9 @@ function setHeaderRgbBackgroundColor(squareElement) {
 
 //add an event listener 
 
-squares.forEach(square =>{
-    square.addEventListener("click", function(){
-      const headerRgbValue = colorDisplayElement.dataset.rgb_value
+squares.forEach((square) => {
+    square.addEventListener( "click", function() {
+      const headerRgbValue = colorDisplayElement.dataset.rgb_value;
       const squareRgbValue = this.dataset.rgb_value;
 
       if(headerRgbValue == squareRgbValue){
@@ -96,9 +122,14 @@ function setSquareBackgoundAfterWin(headerRgbString){
     const [r, g, b] = JSON.parse(headerRgbString);
     const rgbString = `rgb(${r}, ${g}, ${b})`; 
 
-    squares.forEach(sq =>{
+    squares.forEach((sq) => {
         sq.classList.remove("hidden");
         sq.style.backgroundColor = rgbString;
-    })
+        sq.dataset.rgb_value = colorDisplayElement.dataset.rgb_value 
+        
+    });
 }
 
+
+
+//ending the game here. 
