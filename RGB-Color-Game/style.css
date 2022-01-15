@@ -15,7 +15,7 @@ body {
     padding-bottom: 30%;
     margin: 1%;
     float: left;
-    border: 1px solid white;
+    border: 1px solid #fff;
     background-color: antiquewhite;
     transition: background 0.5s;
     cursor: pointer;
