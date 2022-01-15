@@ -102,7 +102,7 @@ function setHeaderRgbBackgroundColor(squareElement) {
    
 }
 
-//add an event listener 
+//add an event listener to each square
 
 squares.forEach((square) => {
     square.addEventListener( "click", function() {
@@ -125,7 +125,7 @@ function setSquareBackgoundAfterWin(headerRgbString){
     squares.forEach((sq) => {
         sq.classList.remove("hidden");
         sq.style.backgroundColor = rgbString;
-        sq.dataset.rgb_value = colorDisplayElement.dataset.rgb_value 
+        sq.dataset.rgb_value = colorDisplayElement.dataset.rgb_value;
         
     });
 }
