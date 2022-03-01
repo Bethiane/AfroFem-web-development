@@ -22,14 +22,16 @@ body{
 }
 
 .announcements{
-    padding: 15px;
+    padding: 5px;
     text-align: center;
+}
+.announcements p{
+    margin-top: 5px;
     font-weight: 300;
     font-size: 15px;
 }
-
 .essentials{
-    margin: 20px;
+margin: 20px;
 float: right;
 display: flex;
 color: white;
@@ -37,6 +39,10 @@ color: white;
 .essentials i{
     padding: 15px;
     font-size: 18px;
+    font-weight: 100px;
+}
+.essentials a{
+    color: white;
 }
 /* .overlay{    
         width: 100%;
@@ -55,13 +61,14 @@ color: white;
     position: relative;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     top: 40%;
     color: #fff;
 }
 .welcome h1{
     font-family: 'Bruno Ace', sans-serif;
-    font-size: 80px;                                            
+    font-size: 80px;  
+    text-align: center;                                          
 }
 
 .welcome p{
@@ -100,7 +107,6 @@ color: white;
     width: 100%;
     display: flex;
     color: #fff;
-    justify-items: center;
     /* display: grid;
     grid-column: 10rem 10rem 10rem; */
 }
@@ -109,7 +115,6 @@ color: white;
     margin-left: 50px;
     width: 10%;
     /* background-color: antiquewhite; */
-    color: gray;
     padding: 50px;
     color: #000;
 }
@@ -172,7 +177,7 @@ height: 110px;
     padding: 10px;
     float: right;
     border: none;
-    background-color: #E8E1E1;
+    background-color: #0926a8;
 }
 
 
@@ -458,8 +463,20 @@ height: 650px;
 }
 
 footer{
+    display: flex;
     background-color: white;
+    width: 100%;
 
+}
+.move-up{
+    width: 30%;
+}
+.copyright{
+    width: 30%;
+}
+
+.social-media{
+    width: 30%;
 }
 button,a{
     cursor: pointer;

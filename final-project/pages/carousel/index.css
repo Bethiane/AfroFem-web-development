@@ -1,0 +1,15 @@
+/* .carousel-indicators{
+    margin-top: 500px !important;
+    background-color: yellow;
+} */
+
+.image-carousel img{
+    width: 20px;
+    height: 200px;
+}
+
+.carousel-caption{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
