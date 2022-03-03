@@ -1,6 +1,9 @@
-// var cartAdded = document.getElementById("add-to-cart");
-// cartAdded.onclick = alert('wow')
 
-function addedToCart(){
-    document.getElementById("added").innerHTML = "Add to cart!";
-}
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }

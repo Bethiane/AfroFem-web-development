@@ -22,153 +22,159 @@
                 <p>Free shipping on Friday!</p>
             </nav>
             <hr>
-            <div class="essentials">
-                <div><a href="../pages/collections/collections.html"><i class="fa fa-search"></i></a></div>
-                <div><a href="../pages/favorites/favorites.html"><i class="fa fa-heart-o"></i></a></div>
-                <div><a href="../pages/cart/cart.html"><i class="fa fa-opencart"></i></a></div>
+            <div class="topnav" id="myTopnav">
+                <!-- <a href="#home" class="active">Home</a> -->
+                <a href="#" class="active"><i class="fa fa-home"></i></a>
+                <a href="../pages/collections/collections.html"><i class="fa fa-search"></i></a>
+                <a href="../pages/favorites/favorites.html"><i class="fa fa-heart-o"></i></a>
+                <a href="../pages/cart/cart.html"><i class="fa fa-opencart"></i></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
             <div class="welcome">
                 <h1>Cosmeta</h1>
                 <p>All natural, beautiful cosmetics available here</p>
             </div>
         </div>
-        <!-- </div> -->
+
 
         <div class="about">
             <h1>About Us</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever <br> since the 1500s.</p>
+            <p>Starting in 2015, we have been a team of 8 experts trying our best to give the best natural
+                cosmetics to our clients.Happy you're here.</p>
         </div>
+
 
         <div class="shop">
+            <div class="product-container">
 
-            <div class="product-list">
-                <h3>PRODUCTS</h3>
-                <ul>
-                    <li>Foundation</li>
-                    <li>Lipsticks
-                        <!-- <select name="" id="">
-                            <option value="0">For men</option>
-                            <option value="0">For women</option>
-                        </select> -->
-                    </li>
-                    <li>Nail polish</li>
-                    <li>Perfumes</li>
-                    <li>Lotions</li>
-                    <li>Sprays</li>
-                    <li>Skin powders</li>
-                    <li>Creams</li>
-                </ul>
-            </div>
+                <div class="product-list">
+                    <h3>PRODUCTS</h3>
+                    <ul>
+                        <li>Foundation</li>
+                        <li>Lipsticks
+                            <select name="" id="">
+                                <option value="0">For men</option>
+                                <option value="0">For women</option>
+                            </select>
+                        </li>
+                        <li>Nail polish</li>
+                        <li>Perfumes</li>
+                        <li>Lotions</li>
+                        <li>Sprays</li>
+                        <li>Skin powders</li>
+                        <li>Creams</li>
+                    </ul>
+                </div>
 
-            <div class="product-details">
-
-                <div class="first-row">
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
+                <div class="product-details">
+                    <div class="small-products">
+                        <div class="first-row">
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button id="add-to-cart" onclick="addedToCart()">Add to cart</button>
+                                        <p id="added"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="product-add-to-cart">
-                                <button id="add-to-cart" onclick="addedToCart()">Add to cart</button>
-                                <p id="added"></p>
+
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button>Add to cart <i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button>Add to cart <i></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
+                        <div class="second-row">
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button>Add to cart <i></i></button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="product-add-to-cart">
-                                <button>Add to cart <i></i></button>
+
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button>Add to cart <i></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                                <div class="product-description">
+                                    <div class="name-price">
+                                        <h4>Perfume</h4>
+                                        <h5>$600</h5>
+                                    </div>
+                                    <div class="product-add-to-cart">
+                                        <button>Add to cart <i></i></button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
+                    </div>
+                    <div class="big-product">
+                        <div class="big-product-card">
+                            <div class="big-product-image"><img src="../imgs/bg1.jpg" alt=""></div>
+                            <div class="big-product-description">
+                                <div class="big-name-price">
+                                    <h4>Perfume</h4>
+                                    <h5>$600</h5>
+                                </div>
+                                <div class="big-product-add-to-cart">
+                                    <button>Add to cart <i></i></button>
+                                </div>
                             </div>
-                            <div class="product-add-to-cart">
-                                <button>Add to cart <i></i></button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
-
-
-                <div class="second-row">
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
-                            </div>
-                            <div class="product-add-to-cart">
-                                <button>Add to cart <i></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
-                            </div>
-                            <div class="product-add-to-cart">
-                                <button>Add to cart <i></i></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                        <div class="product-description">
-                            <div class="name-price">
-                                <h4>Perfume</h4>
-                                <h5>$600</h5>
-                            </div>
-                            <div class="product-add-to-cart">
-                                <button>Add to cart <i></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-            <div class="main-shown-product">
-                <div class="big-product-card">
-                    <div class="big-product-image"><img src="../imgs/bg1.jpg" alt=""></div>
-                    <div class="big-product-description">
-                        <div class="big-name-price">
-                            <h4>Perfume</h4>
-                            <h5>$600</h5>
-                        </div>
-                        <div class="big-product-add-to-cart">
-                            <button>Add to cart <i></i></button>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="view-more-collections">
+                <button>View full collection</button>
             </div>
-
-
-
         </div>
-
 
         <div class="what-new">
             <h1>WHAT'S NEW</h1>
@@ -184,25 +190,25 @@
 
                 </div>
                 <div class="new-collection-two" id="collections">
-                    <!-- <div class="overlay"></div>
+                     <div class="overlay"></div>
                     <div class="collection-caption">
                         <h5>LIPSTICK</h5>
                         <h1>Revlon Super Lustrous<br> Lipstick</h1>
                         <button>View collection</button>
-                    </div> -->
+                    </div> 
                 </div>
                 <div class="new-collection-three" id="collections">
-                    <!-- <div class="overlay"></div>
+                     <div class="overlay"></div>
                     <div class="collection-caption">
                         <h5>LIPSTICK</h5>
                         <h1>Revlon Super Lustrous<br> Lipstick</h1>
                         <button>View collection</button>
-                    </div> -->
+                    </div> 
                 </div>
 
             </div>
         </div>
-
+        
         <div class="before-apply">
             <div class="tutorial-list" id="tutorial">
                 <ul>
@@ -228,100 +234,102 @@
 
         </div>
 
-        <!-- <div class="testimonials">
+
+        <div class="testimonial">
             <div class="testimony">
                 <h5>Twagiyezu Callixte</h5>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s.</p>
             </div>
-
             <div class="attestant">
-
-            </div>
-
-        </div> -->
-
-
-
-        <!-- <div class="article1">
-            <div class="article-description">
-                <span class="date">Today</span>
-                <h3>How to apply night foundations</h3>
             </div>
         </div>
 
-        <div class="article2">
-            <div class="article-description">
-                <span class="date">Today</span>
-                <h3>How to apply night foundations</h3>
-            </div>
-        </div>
 
-        <div class="article3">
-            <div class="article-description">
-                <span class="date">Today</span>
-                <h3>How to apply night foundations</h3>
-            </div>
-        </div>
-
-        <div class="article4">
-            <div class="article-description">
-                <span class="date">Today</span>
-                <h3>How to apply night foundations</h3>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="app-section">
-
-        <div class="phone-section">
-            <img src="../imgs/iphone.png" alt="">
-        </div>
-
-        <div class="phone-description">
-            <div class="text-description">
-                <h1>Get the app downloaded on your phone</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="app-buttons">
-                <div class="button-one">
-                    <button><i class="fa fa-apple"></i></i>
-                        <h5>Available on the<span><br>
-                                App Store</span>
-                        </h5>
-                    </button>
+        <div class="articles">
+            <div class="article">
+                <img src="../imgs/bg1.jpg" alt="Avatar" class="article-image">
+                <div class="article-description">
+                    <span>Today</span>
+                    <h3>My Name is John</h3>
                 </div>
-
-                <div class="button-two">
-                    <button><i class='fab fa-android'></i></i>
-                        <h5>Android app on the<span><br>
-                                Google Play</span>
-                        </h5>
-                    </button>
+            </div>
+            <div class="article">
+                <img src="../imgs/bg2.jpg" alt="Avatar" class="article-image">
+                <div class="article-description">
+                    <span>Today</span>
+                    <h3>My Name is John</h3>
                 </div>
-
-
+            </div>
+            <div class="article">
+                <img src="../imgs/bg3.jpg" alt="Avatar" class="article-image">
+                <div class="article-description">
+                    <span>Today</span>
+                    <h3>My Name is John</h3>
+                </div>
+            </div>
+            <div class="article">
+                <img src="../imgs/bg4.jpg" alt="Avatar" class="article-image">
+                <div class="article-description">
+                    <span>Today</span>
+                    <h3>My Name is John</h3>
+                </div>
             </div>
         </div>
 
-    </div>
 
-    <footer>
-        <div class="move-up">
-            <button><i class="fa-brands fa-apple"></i></button>
+      
+        <div class="app-section">
+
+            <div class="phone-section">
+                <img src="../imgs/iphone.png" alt="">
+            </div>
+
+            <div class="phone-description">
+                <div class="text-description">
+                    <h1>Get the app downloaded on your phone</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <div class="app-buttons">
+                    <div class="button-one">
+                        <button><i class="fa fa-apple"></i></i>
+                            <h5>Available on the<span><br>
+                                    App Store</span>
+                            </h5>
+                        </button>
+                    </div>
+                    <img src="../imgs/apple.svg" alt="xx">
+
+                    <div class="button-two">
+                        <button>
+                            <h5>Android app on the<span><br>
+                                    Google Play</span>
+                            </h5>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
-        <div class="copyright">
-            <i class="fa fa-copyright"></i>
-            <p>All rights reserved</p>
-        </div>
-        <div class="social-media">
-            <div><i class="fa fa-facebook"></i></div>
-            <div><i class="fa fa-youtube-play"></i></div>
-            <div><i class="fa fa-linkedin-square"></i></div>
-            <div><i class="fa fa-instagram"></i></div>
-        </div>
-    </footer>
+
+        <!-- <footer>
+            <div class="move-up">
+                <button><i class="fa-brands fa-apple"></i></button>
+            </div>
+            <div class="copyright">
+                <i class="fa fa-copyright"></i>
+                <p>All rights reserved</p>
+            </div>
+            <div class="social-media">
+                <div><i class="fa fa-facebook"></i></div>
+                <div><i class="fa fa-youtube-play"></i></div>
+                <div><i class="fa fa-linkedin-square"></i></div>
+                <div><i class="fa fa-instagram"></i></div>
+            </div>
+        </footer> -->
     </div>
 
     <script src="../scripts/index.js"></script>
